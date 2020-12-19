@@ -1,0 +1,56 @@
+$fotter-height: 3rem;
+
+.main {
+    //outline: solid 1px blue;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: $fotter-height;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+footer {
+    //outline: solid 1px blue;
+    position: absolute;
+    height: $fotter-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    //background-color: red;
+    .twitter-share-button {
+        color: #ccc;
+        background-color: #2094df;
+        display: inline-block;
+        padding: 0 8px 3px 8px;
+        position: absolute;
+        top: 0.8rem;
+        right: 1.5rem;
+    }
+}
+
+.command-line-input {
+    display: flex;
+
+    .prompt-user-name {
+        color: #16c60c;
+    }
+
+    .input {
+        flex-grow: 1;
+        padding: 0 0.5rem;
+        margin-top: -1px;
+        margin-left: -1px;
+
+
+        input {
+            margin: 0;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+}

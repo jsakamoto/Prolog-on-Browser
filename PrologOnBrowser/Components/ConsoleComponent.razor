@@ -1,0 +1,21 @@
+﻿@inject IConsoleHost ConsoleHost
+<div class="console-component">
+    @foreach (var line in ConsoleHost.Lines)
+    {
+        <div @key="line.Id" class="console-line">
+            @foreach (var fragment in line.Fragments)
+            {
+                <span @key="fragment.Id" class="console-fragment" style="color:@ForeColorOf(fragment)">
+                    @if (fragment.Link == null)
+                    {
+                        @fragment.Text
+                    }
+                    else
+                    {
+                        <a href="@fragment.Link" target="_blank">@fragment.Text</a>
+                    }
+                </span>
+            }
+        </div>
+    }
+</div>

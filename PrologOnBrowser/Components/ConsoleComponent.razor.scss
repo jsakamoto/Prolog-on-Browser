@@ -1,0 +1,18 @@
+﻿.console-component {
+    .console-line {
+        word-break: break-all;
+
+        &:before {
+            content: '';
+            display: inline-block;
+        }
+
+        .console-fragment {
+            white-space: pre-wrap;
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
