@@ -183,7 +183,7 @@ namespace PrologOnBrowser
         private string GetTwitterShareButtonUrl()
         {
             const string description = "\"Prolog on Browser\"\nThis is the Prolog interactive interpreter running on a Web browser!";
-            const string url = "https://github.com/jsakamoto/prolog-on-browser";
+            const string url = "https://jsakamoto.github.io/Prolog-on-Browser/";
             return "https://twitter.com/intent/tweet" +
                 $"?text={Uri.EscapeDataString(description)}" +
                 $"&hashtags=Prolog" +
