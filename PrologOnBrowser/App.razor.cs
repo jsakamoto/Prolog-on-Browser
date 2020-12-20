@@ -46,6 +46,7 @@ namespace PrologOnBrowser
             await TypeAndExecuteCommand("mortal(socrates).");
 
             _Initialized = true;
+            this.StateHasChanged();
 
             await interpreterTask;
         }
