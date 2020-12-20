@@ -5,6 +5,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <Nullable>enable</Nullable>
     <WarningsAsErrors>nullable</WarningsAsErrors>
+    <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,10 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="compilerconfig.json" />
     <None Include="compilerconfig.json" />
-    <_ContentIncludedByDefault Remove="wwwroot\site.css" />
-    <_ContentIncludedByDefault Remove="wwwroot\site.min.css" />
   </ItemGroup>
 
 </Project>
