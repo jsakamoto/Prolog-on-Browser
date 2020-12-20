@@ -1,0 +1,15 @@
+{
+  "name": "Prolog on Browser",
+  "short_name": "Prolog on Browser",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#682a7b",
+  "theme_color": "#682a7b",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
